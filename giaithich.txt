@@ -1,0 +1,27 @@
+- src/components/:
+Mục đích: Chứa các component React tái sử dụng. 
+Đây là nơi bạn xây dựng các khối giao diện nhỏ hơn có thể được sử dụng ở nhiều nơi trong ứng dụng.
+
+- src/hooks/:
+Mục đích: Chứa các custom hooks. Custom hook là các hàm JavaScript sử dụng các hook có sẵn của React 
+(như useState, useEffect,...) để đóng gói logic có thể tái sử dụng giữa các component.
+
+- src/pages/:
+Mục đích: Chứa các component đại diện cho các trang hoặc màn hình khác nhau của ứng dụng. 
+Các component này thường sử dụng các component nhỏ hơn từ thư mục components/ 
+và xử lý logic điều hướng và dữ liệu chính cho một trang cụ thể.
+
+- src/services/:
+Mục đích: Chứa các hàm liên quan đến việc tương tác với API hoặc các dịch vụ bên ngoài. 
+Việc tách biệt logic này giúp component trở nên gọn gàng và dễ kiểm thử hơn.
+
+- src/utils/:
+Mục đích: Chứa các hàm tiện ích (utility functions) dùng chung trong toàn bộ ứng dụng. 
+Đây là nơi đặt các hàm không liên quan trực tiếp đến logic nghiệp vụ cụ thể của một component hoặc dịch vụ nào.
+
+- src/assets/:
+Mục đích: Chứa các tài nguyên tĩnh khác không nằm trong thư mục public/ nhưng được quản lý bởi webpack 
+(hoặc công cụ build khác). Điều này thường bao gồm hình ảnh, font chữ, 
+hoặc các tệp media khác mà bạn muốn import trực tiếp vào mã JavaScript.
+
+- scr/routes:
