@@ -25,3 +25,4 @@ Mục đích: Chứa các tài nguyên tĩnh khác không nằm trong thư mục
 hoặc các tệp media khác mà bạn muốn import trực tiếp vào mã JavaScript.
 
 - scr/routes:
+
