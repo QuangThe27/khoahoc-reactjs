@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import routes from './routes';
+import { routes } from './routes';
 import DefaultComponent from './components/DefaultComponent/DefaultComponent';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
                                 key={index}
                                 path={route.path}
                                 element={
-                                    <Layout>
+                                    <Layout isShowHeader={route.isShowHeader}>
                                         <Page />
                                     </Layout>
                                 }

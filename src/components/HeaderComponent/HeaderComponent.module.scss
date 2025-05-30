@@ -1,0 +1,39 @@
+.wrapper {
+    height: 66px;
+    background-color: var(--color-primary);
+
+    .col {
+        height: 100%;
+        color: var(--text-color);
+    }
+}
+
+.col_left {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+
+    img {
+        width: 40px;
+        border-radius: 4px;
+    }
+
+    span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--white);
+        margin-left: 14px;
+    }
+}
+
+.col_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
