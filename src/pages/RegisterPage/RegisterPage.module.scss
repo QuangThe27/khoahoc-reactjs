@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo {
+    margin-bottom: 30px;
+    img {
+        width: 60px;
+        height: auto;
+        border-radius: 6px;
+    }
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.register-form {
+    margin-top: 30px;
+
+    .ant-input-prefix {
+        color: rgba(0, 0, 0, 0.25);
+    }
+
+    .ant-form-item-label > label {
+        font-weight: 600;
+    }
+
+    .register-form-button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 6px;
+        background-color: #1890ff;
+        border-color: #1890ff;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: #40a9ff;
+            border-color: #40a9ff;
+        }
+    }
+}
+
+.links {
+    margin-top: 25px;
+    font-size: 14px;
+    .link {
+        color: #1890ff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.terms {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+    .link {
+        color: #1890ff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

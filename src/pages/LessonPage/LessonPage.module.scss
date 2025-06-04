@@ -1,0 +1,173 @@
+.wrapper {
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--color-primary);
+}
+
+.headingLeft {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+
+    img {
+        width: 35px;
+        border-radius: 4px;
+    }
+
+    span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--white);
+        margin-left: 14px;
+    }
+}
+
+.headingRight {
+    margin-right: 25px;
+
+    span {
+        font-size: 1.4rem;
+        color: var(--white);
+        margin-right: 20px;
+    }
+
+    button {
+        cursor: pointer;
+        font-size: 1.4rem;
+        color: var(--white);
+        background: none;
+        border: none;
+    }
+}
+
+.content {
+    height: 84vh;
+}
+
+.contentLeft {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.containerCenter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 92%;
+    background: #000;
+}
+
+.containerVideo {
+    width: 86%;
+    height: 100%;
+}
+
+.containerContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.introduceTitle {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.introduceTime {
+    font-size: 1.6rem;
+    color: #777676;
+    margin-top: 15px;
+}
+
+.introduceContent {
+    font-size: 1.6rem;
+    color: #333;
+    margin: 35px 0 25px 0;
+}
+
+.introduce {
+    width: 86%;
+}
+
+.contentRight {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.containerNavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    border-top: 1px solid #ddd;
+    background-color: #f4f3f3;
+}
+
+// List course
+.lessonTitleMain {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 10px 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.lessonTitle {
+    font-weight: 600;
+}
+
+.lessonSub {
+    font-size: 12px;
+    color: #666;
+}
+
+.lessonSubItem {
+    font-size: 13px;
+}
+
+.lessonEmpty {
+    font-size: 12px;
+    color: #999;
+}
+
+.locked {
+    color: #ccc !important;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+// NavBar
+.navBar {
+    button {
+        cursor: pointer;
+        width: 150px;
+        color: #4382b9;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 8px;
+        margin: 0 8px;
+        border: 1px solid #4382b9;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+
+    .narBarIcon {
+        font-size: 1.3rem;
+        margin: 0 2px;
+        padding: 0;
+    }
+
+    :hover {
+        color: var(--white);
+        background-color: #4382b9;
+    }
+}
