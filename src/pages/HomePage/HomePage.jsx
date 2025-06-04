@@ -4,6 +4,7 @@ import styles from './HomePage.module.scss';
 import slideImage from '../../assets/image/slide/slide01.png';
 import { Carousel, Col, Row, Card } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 import ButtonLinkComponent from '../../components/ButtonLinkComponent/ButtonLinkComponent';
 
@@ -109,10 +110,14 @@ function HomePage() {
                             <Card
                                 style={{ width: 300 }}
                                 cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
+                                    <Link to="/product">
+                                        <img
+                                            className={cx('courseImg')}
+                                            style={{ width: '100%' }}
+                                            alt="example"
+                                            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                        />
+                                    </Link>
                                 }
                             >
                                 <Meta title="Card title" description="This is the description" />
@@ -135,10 +140,14 @@ function HomePage() {
                             <Card
                                 style={{ width: 300 }}
                                 cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
+                                    <Link to="/product">
+                                        <img
+                                            className={cx('courseImg')}
+                                            style={{ width: '100%' }}
+                                            alt="example"
+                                            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                        />
+                                    </Link>
                                 }
                             >
                                 <Meta title="Card title" description="This is the description" />
@@ -165,10 +174,14 @@ function HomePage() {
                             <Card
                                 style={{ width: 300 }}
                                 cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
+                                    <Link to="/product">
+                                        <img
+                                            className={cx('courseImg')}
+                                            style={{ width: '100%' }}
+                                            alt="example"
+                                            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                                        />
+                                    </Link>
                                 }
                             >
                                 <Meta title="Card title" />
