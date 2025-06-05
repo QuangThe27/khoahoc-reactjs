@@ -3,12 +3,16 @@ import LoginPage from '../pages/LoginPage/LoginPage';
 import RegisterPage from '../pages/RegisterPage/RegisterPage';
 import ProductPage from '../pages/ProductPage/ProductPage';
 import LessonPage from '../pages/LessonPage/LessonPage';
+import createUser from '../pages/ManageUser/createUser';
+import editUser from '../pages/ManageUser/editUser';
+import showUser from '../pages/ManageUser/showUser';
 
-export const routes = [
+// General application routes
+export const generalRoutes = [
     {
         path: '/',
         page: HomePage,
-        isShowHeader: true, // Hiện thị HeaderComponent
+        isShowHeader: true,
     },
     {
         path: '/login',
@@ -30,9 +34,34 @@ export const routes = [
         page: LessonPage,
         isShowHeader: false,
     },
+];
+
+// Management routes
+export const manageRoutes = [
     {
-        // URL không tồn tại
+        path: '/manage/createUser',
+        page: createUser,
+        isShowHeader: false,
+    },
+    {
+        path: '/manage/editUser',
+        page: editUser,
+        isShowHeader: false,
+    },
+    {
+        path: '/manage/showUser',
+        page: showUser,
+        isShowHeader: false,
+    },
+];
+
+// Routes tổng
+export const routes = [
+    ...generalRoutes,
+    ...manageRoutes,
+    {
         path: '*',
         // page: NotFoundPage,
+        isShowHeader: false,
     },
 ];
