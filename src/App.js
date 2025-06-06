@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { routes } from './routes';
 import DefaultComponent from './components/DefaultComponent/DefaultComponent';
+import ManageLayoutComponent from './components/ManageLayoutComponent/ManageLayoutComponent';
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
                 <Routes>
                     {routes.map((route, index) => {
                         const Page = route.page;
-                        const Layout = DefaultComponent;
+                        // Xác định layout nào sẽ được sử dụng dựa trên thuộc tính 'isManageRoute'
+                        const Layout = route.isManageRoute ? ManageLayoutComponent : DefaultComponent;
 
                         return (
                             <Route

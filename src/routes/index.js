@@ -41,17 +41,17 @@ export const manageRoutes = [
     {
         path: '/manage/createUser',
         page: createUser,
-        isShowHeader: false,
+        isManageRoute: true,
     },
     {
         path: '/manage/editUser',
         page: editUser,
-        isShowHeader: false,
+        isManageRoute: true,
     },
     {
         path: '/manage/showUser',
         page: showUser,
-        isShowHeader: false,
+        isManageRoute: true,
     },
 ];
 
