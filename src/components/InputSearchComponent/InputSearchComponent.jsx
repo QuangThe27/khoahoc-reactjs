@@ -5,9 +5,9 @@ import logoImage from '../../assets/image/logo/image.png';
 
 const cx = classNames.bind(styles);
 
-function InputSearchComponent({ widthInput, placeholderInput }) {
+function InputSearchComponent({ widthInput, placeholderInput, border }) {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper')} style={{ border: `${border}` }}>
             <div className={cx('search_btn')}>
                 <SearchOutlined className={cx('search_icon')} />
             </div>

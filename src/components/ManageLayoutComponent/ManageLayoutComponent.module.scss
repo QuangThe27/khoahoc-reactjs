@@ -1,0 +1,36 @@
+.manage-layout-wrapper {
+    height: 100vh;
+
+    .sider {
+        height: 100%;
+        overflow-y: auto;
+        background-color: #001529;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        height: 32px;
+        margin: 16px;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .menu {
+        border-right: none;
+    }
+
+    .content {
+        margin: 24px 16px;
+        padding: 24px;
+        background: #fff;
+        min-height: calc(100vh - 64px - 48px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+        border-radius: 8px;
+        overflow-y: auto;
+    }
+}
