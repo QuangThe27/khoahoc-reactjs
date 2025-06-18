@@ -24,7 +24,7 @@ function ManageLayoutComponent({ children }) {
                         <Link to="/manage/showUser">Quản lý người dùng</Link>
                     </Menu.Item>
                     <Menu.Item key="1" icon={<UserOutlined />}>
-                        Quản lý khóa học
+                        <Link to="/manage/showCourse">Quản lý khóa học</Link>
                     </Menu.Item>
                 </Menu>
             </Sider>

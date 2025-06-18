@@ -1,0 +1,61 @@
+.wrapper {
+    padding: 0;
+}
+
+.page-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+    text-align: left;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    margin-top: 20px;
+
+    :global {
+        .ant-table-thead > tr > th {
+            background-color: #f0f2f5;
+            font-weight: 600;
+            color: #555;
+            padding: 12px 16px;
+        }
+
+        .ant-table-tbody > tr > td {
+            padding: 12px 16px;
+        }
+
+        .ant-table-tbody > tr:hover > td {
+            background-color: #e6f7ff;
+        }
+
+        .ant-tag {
+            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .ant-btn {
+            &.action-button {
+                min-width: 70px;
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                .anticon {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

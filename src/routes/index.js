@@ -6,6 +6,9 @@ import LessonPage from '../pages/LessonPage/LessonPage';
 import createUser from '../pages/ManageUser/createUser';
 import editUser from '../pages/ManageUser/editUser';
 import showUser from '../pages/ManageUser/showUser';
+import ShowCourse from '../pages/ManageCourse/showCourse';
+import CreateCourse from '../pages/ManageCourse/createCourse';
+import EditCourse from '../pages/ManageCourse/editCourse';
 
 // General application routes
 export const generalRoutes = [
@@ -39,6 +42,11 @@ export const generalRoutes = [
 // Management routes
 export const manageRoutes = [
     {
+        path: '/manage/showUser',
+        page: showUser,
+        isManageRoute: true,
+    },
+    {
         path: '/manage/createUser',
         page: createUser,
         isManageRoute: true,
@@ -49,8 +57,18 @@ export const manageRoutes = [
         isManageRoute: true,
     },
     {
-        path: '/manage/showUser',
-        page: showUser,
+        path: '/manage/showCourse',
+        page: ShowCourse,
+        isManageRoute: true,
+    },
+    {
+        path: '/manage/createCourse',
+        page: CreateCourse,
+        isManageRoute: true,
+    },
+    {
+        path: '/manage/editCourse',
+        page: EditCourse,
         isManageRoute: true,
     },
 ];
